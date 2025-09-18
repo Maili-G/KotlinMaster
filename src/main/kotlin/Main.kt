@@ -1,23 +1,29 @@
 package org.example
 
+import org.example.dresseur.Entraineur
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+var joueur = Entraineur(1,"Sacha",100)
+var rival = Entraineur(2,"Regis",200)
+
 fun main() {
-    val name = "Kotlin"
+    //val name = "Kotlin"
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+    //println("Hello, " + name + "!")
 
-    for (i in 1..5) {
+    //for (i in 1..5) {
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+        //println("i = $i")
+    //}
 
-    println(changeCouleur("Hello","rouge"))
-    println(changeCouleur("World","bleu"))
-    println("Hello ${changeCouleur("my","jaune")} World")
-    println(changeCouleur("Truc","marron"))
+//    println(changeCouleur("Hello","rouge"))
+//    println(changeCouleur("World","bleu"))
+//    println("Hello ${changeCouleur("my","jaune")} World")
+//    println(changeCouleur("Truc","marron"))
 
 }
 /**
