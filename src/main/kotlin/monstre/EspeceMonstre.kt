@@ -16,12 +16,12 @@ import java.io.File
 * @property baseAttaqueSpe L'attaque Spéciale de base de l'espèce.
 * @property baseDefenseSpe La défense Spéciale de base de l'espèce.
 * @property basePv Les points de vie de base de l'espèce.
-* @property modAttaque Le mode d'attaque de l'espèce.
-* @property modDefense Le mode de défense de l'espèce.
-* @property modVitesse Le mode de vitesse de l'espèce.
-* @property modAttaqueSpe Le mode de l'attaque Spéciale de l'espèce.
-* @property modDefenseSpe Le mode de la défense Spécile de l'espèce.
-* @property modPv Le mode de points de vie de l'espèce.
+* @property modAttaque Le modificateur de croissance de l'attaque de l'espèce, appliqué lors des montées de niveau.
+* @property modDefense Le modificateur de croissance de défense de l'espèce, appliqué lors des montées de niveau.
+* @property modVitesse Le modificateur de croissance de vitesse de l'espèce, appliqué lors des montées de niveau.
+* @property modAttaqueSpe Le modificateur de croissance de l'attaque Spéciale de l'espèce, appliqué lors des montées de niveau.
+* @property modDefenseSpe Le modificateur de croissance de la défense Spécile de l'espèce, appliqué lors des montées de niveau.
+* @property modPv Le modificateur de croissance de points de vie de l'espèce, appliqué lors des montées de niveau.
 * @property description La description de l'espèce.
 * @property particularites Les particularités de l'espèce.
 * @property caractères Les caracères de l'espèce.
