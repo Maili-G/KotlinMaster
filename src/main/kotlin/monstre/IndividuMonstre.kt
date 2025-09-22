@@ -70,4 +70,23 @@ class IndividuMonstre (
         this.exp = expInit // applique le setter et déclenche un éventuel level-up
     }
 
+    /**
+     * Attaque un autre [IndividuMonstre] et inflige des dégâts.
+     *
+     * Les dégâts sont calculés de manière très simple pour le moment :
+     * `dégâts = attaque - (défense / 2)` (minimum 1 dégât).
+     *
+     * @param cible Monstre cible de l'attaque.
+     */
+
+    fun attaquer(cible : IndividuMonstre){
+        var degatBrut = this.attaque
+        var degatTotal  = degatBrut - (this.defense/2)
+        if (degatTotal<1) degatTotal = 1
+        val pvAvant = cible.pv
+        cible.pv -= degatTotal
+        var pvApres = cible.pv
+        println("$nom inflige ${pvAvant-pvApres} dégâts à ${cible.nom}")
+    }
+
 }
