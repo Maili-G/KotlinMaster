@@ -12,7 +12,7 @@ import kotlin.math.*
 
 class IndividuMonstre (
     val id : Int,
-    val nom : String,
+    var nom : String,
     val espece : EspeceMonstre,
     val entraineur : Entraineur?,
     expInit : Double
@@ -87,6 +87,32 @@ class IndividuMonstre (
         cible.pv -= degatTotal
         var pvApres = cible.pv
         println("$nom inflige ${pvAvant-pvApres} dégâts à ${cible.nom}")
+    }
+
+    /**
+     * Demande au joueur de renommer le monstre.
+     * Si l'utilisateur entre un texte vide, le nom n'est pas modifié.
+     */
+
+    fun renommer(){
+        println("Renommer $nom ?")
+        val nouveauNom = readln()
+
+        if (nouveauNom != "")
+            nom = nouveauNom
+            //println("Le nouveau nom est $nom")
+    }
+
+    fun afficheDetail(){
+        println(espece.afficheArt())
+        println("======================")
+        println("Nom : $nom     Niveau : $niveau")
+        println("Exp : $exp")
+        println("PV : $pv / $pvMax")
+        println("======================")
+        println("Atq : $attaque     Def : $defense      Vitesse : $vitesse")
+        println("AtqSpe : $attaqueSpe       DefSpe : $defenseSpe")
+        println("======================")
     }
 
 }

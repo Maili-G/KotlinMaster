@@ -26,7 +26,7 @@ fun main() {
     val monstre1 = IndividuMonstre(1,"Springleaf", especeSpringleaf,null, 1500.0)
     val monstre2 = IndividuMonstre(2, "Flamkip", especeFlamkip, null, 1500.0)
     val monstre3 = IndividuMonstre(3, "Aquamy", especeAquamy, null, 1500.0)
-    monstre1.attaquer(monstre2)
+    monstre1.afficheDetail()
 
 }
 /**
