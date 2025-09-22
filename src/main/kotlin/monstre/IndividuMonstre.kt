@@ -17,7 +17,7 @@ class IndividuMonstre (
     val entraineur : Entraineur?,
     expInit : Double
 ) {
-    val niveau : Int = 1
+    var niveau : Int = 1
     val attaque : Int = espece.baseAttaque + Random.nextInt(-2,2) // demande d'aide à un camarade et recherche pour le random
     val defense : Int = espece.baseDefense + Random.nextInt(-2,2)
     val vitesse : Int = espece.baseVitesse + Random.nextInt(-2,2)
@@ -25,7 +25,18 @@ class IndividuMonstre (
     val defenseSpe : Int = espece.baseDefenseSpe + Random.nextInt(-2,2)
     val pvMax : Int = espece.basePv + Random.nextInt(-5,5)
     val potentiel : Double = Random.nextDouble(0.5,2.0)
-    val exp : Double = 0.0
+    var exp : Double = 0.0
+        get() = field
+        set(value) {
+            field = value
+            var estNiveau1 = (niveau == 1)
+            while(field >= palierExp(niveau)){
+                levelUp()
+                if (estNiveau1==false) println("Le monstre $nom est maintenant de niveau $niveau !")
+            }
+
+
+        }
     var pv : Int = pvMax
         get() = field
         set(nouveauPv) {
@@ -42,10 +53,11 @@ class IndividuMonstre (
 
     fun palierExp(niveau : Int) : Double {
 
-        return (100.0*(niveau-1)).pow(2.0)
+        return 100.0*(niveau-1).toDouble().pow(2.0)
     }
 
     fun levelUp(){
+        niveau +=1
         round(espece.modVitesse*potentiel) + Random.nextInt(-2,2)
         round(espece.modAttaque*potentiel) + Random.nextInt(-2,2)
         round(espece.modDefense*potentiel) + Random.nextInt(-2,2)
@@ -53,4 +65,9 @@ class IndividuMonstre (
         round(espece.modAttaqueSpe*potentiel) + Random.nextInt(-2,2)
         round(espece.modPv*potentiel) + Random.nextInt(-5,5)
     }
+
+    init {
+        this.exp = expInit // applique le setter et déclenche un éventuel level-up
+    }
+
 }
