@@ -14,7 +14,7 @@ class IndividuMonstre (
     val id : Int,
     var nom : String,
     val espece : EspeceMonstre,
-    val entraineur : Entraineur?,
+    var entraineur : Entraineur?,
     expInit : Double
 ) {
     var niveau : Int = 1
@@ -94,13 +94,13 @@ class IndividuMonstre (
      * Si l'utilisateur entre un texte vide, le nom n'est pas modifié.
      */
 
-    fun renommer(){
+     fun renommer(){
         println("Renommer $nom ?")
         val nouveauNom = readln()
 
         if (nouveauNom != "")
             nom = nouveauNom
-            //println("Le nouveau nom est $nom")
+            println("Le nouveau nom est $nom")
     }
 
     fun afficheDetail(){

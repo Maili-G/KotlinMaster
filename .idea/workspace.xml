@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c591f4b3-7d28-46e3-90a3-5908bb63f8e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/MonsterKube.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dresseur/Entraineur.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dresseur/Entraineur.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/monstre/IndividuMonstre.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/monstre/IndividuMonstre.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -74,7 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.KotlinMonsters [:org.example.MainKt.main()].executor": "Debug",
+    "Gradle.KotlinMonsters [:org.example.MainKt.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -135,7 +139,7 @@
       <workItem from="1758524397341" duration="487000" />
       <workItem from="1758524892205" duration="3750000" />
       <workItem from="1758529717568" duration="5652000" />
-      <workItem from="1758608444706" duration="4026000" />
+      <workItem from="1758608444706" duration="9586000" />
     </task>
     <servers />
   </component>
@@ -154,15 +158,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="((IndividuMonstre)monstre1).niveau" custom="org.example.monstre.IndividuMonstre" />

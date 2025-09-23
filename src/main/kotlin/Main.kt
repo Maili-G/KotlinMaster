@@ -2,6 +2,7 @@ package org.example
 
 import org.example.dresseur.Entraineur
 import org.example.item.Badge
+import org.example.item.MonsterKube
 import org.example.monde.Zone
 import org.example.monstre.EspeceMonstre
 import org.example.monstre.IndividuMonstre
@@ -28,8 +29,9 @@ fun main() {
     val monstre2 = IndividuMonstre(2, "Flamkip", especeFlamkip, null, 1500.0)
     val monstre3 = IndividuMonstre(3, "Aquamy", especeAquamy, null, 1500.0)
     //monstre1.afficheDetail()
-    val badgePierre = Badge(1,"Badge Roche", "Badge gagné lorsque le joueur a atteint l'arène de pierre.")
-
+    //val badgePierre = Badge(1,"Badge Roche", "Badge gagné lorsque le joueur a atteint l'arène de pierre.")
+    val MonsterKube1 = MonsterKube(1,"Kube1","Le Kube permet de capturer un monstre",60.0)
+    println(MonsterKube1.utiliser(monstre1))
 
 }
 /**
