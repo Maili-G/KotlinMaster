@@ -1,6 +1,6 @@
 package org.example.jeu
 
-import org.example.item.Utilisable
+import         org.example.item.Utilisable
 import org.example.joueur
 import org.example.monstre.IndividuMonstre
 
@@ -98,5 +98,30 @@ class CombatMonstre(
         }
     }
 
+    fun afficheCombat(){
+        var round = 1
+        println("Début du Round : $round")
+        println("Niveau : ${monstreSauvage.niveau}")
+        println("PV : ${monstreSauvage.pv}/${monstreSauvage.pvMax}")
+        println(monstreSauvage.espece.afficheArt())
+        println(monstreJoueur.espece.afficheArt(false))
+        println("Niveau : ${monstreJoueur.niveau}")
+        println("PV : ${monstreJoueur.pv}/${monstreJoueur.pvMax}")
+    }
 
+    fun jouer(){
+        val joueurPlusRapide = (monstreJoueur.vitesse >= monstreSauvage.vitesse)
+        println(afficheCombat())
+        if (joueurPlusRapide){
+            val continuer = actionJoueur()
+            if (continuer == false) return else actionAdversaire()
+        }
+        else {
+            actionAdversaire()
+            if (gameOver() == false) {
+                val continuer = actionJoueur()
+                if (continuer == false)
+            }
+        }
+    }
 }
