@@ -120,8 +120,28 @@ class CombatMonstre(
             actionAdversaire()
             if (gameOver() == false) {
                 val continuer = actionJoueur()
-                if (continuer == false)
+                if (continuer == false) return else return
             }
+            else return
+        }
+    }
+
+    /**
+     * Lance le combat et gère les rounds jusqu'à la victoire ou la défaite.
+     *
+     * Affiche un message de fin si le joueur perd et restaure les PV
+     * de tous ses monstres.
+     */
+
+    fun lancerCombat(){
+        while (!gameOver() && !joueurGagne()) {
+            this.jouer()
+            println("======== Fin du Round : $round ========")
+            round++
+        }
+        if (gameOver()) {
+            joueur.equipeMonstre.forEach { it.pv = it.pvMax }
+            println("Game Over !")
         }
     }
 }

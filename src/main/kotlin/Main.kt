@@ -3,6 +3,7 @@ package org.example
 import org.example.dresseur.Entraineur
 import org.example.item.Badge
 import org.example.item.MonsterKube
+import org.example.jeu.CombatMonstre
 import org.example.monde.Zone
 import org.example.monstre.EspeceMonstre
 import org.example.monstre.IndividuMonstre
@@ -32,6 +33,8 @@ fun main() {
     //val badgePierre = Badge(1,"Badge Roche", "Badge gagné lorsque le joueur a atteint l'arène de pierre.")
     val MonsterKube1 = MonsterKube(1,"Kube1","Le Kube permet de capturer un monstre",60.0)
     println(MonsterKube1.utiliser(monstre1))
+    val combat = CombatMonstre(monstre1,monstre2)
+    println(combat.jouer())
 
 }
 /**
