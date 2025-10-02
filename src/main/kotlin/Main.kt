@@ -25,20 +25,21 @@ var monstre = Partie(1,joueur,route1)
 val monstre1 = IndividuMonstre(1,"Springleaf", especeSpringleaf,null, 1500.0)
 val monstre2 = IndividuMonstre(2, "Flamkip", especeFlamkip, null, 1500.0)
 val monstre3 = IndividuMonstre(3, "Aquamy", especeAquamy, null, 1500.0)
+
 fun main() {
     route1.zoneSuivante = route2
     route2.zonePrecedente = route1
-
 
     //monstre1.afficheDetail()
     //val badgePierre = Badge(1,"Badge Roche", "Badge gagné lorsque le joueur a atteint l'arène de pierre.")
     val MonsterKube1 = MonsterKube(1,"Kube1","Le Kube permet de capturer un monstre",60.0)
     //println(MonsterKube1.utiliser(monstre1))
     val combat = CombatMonstre(monstre1,monstre2)
-   println(route1.genereMonstre())
+   //println(route1.genereMonstre())
     //var partie = Partie(1,joueur,route1)
     //partie.choixStarter()
     //partie.zone.genereMonstre().afficheDetail()
+
 
 
 }
@@ -51,6 +52,9 @@ fun main() {
  * @param couleur Le nom de la couleur à appliquer (ex: "rouge", "vert", "bleu"). Par défaut c'est une chaîne vide, ce qui n'applique aucune couleur.
  * @return Le message coloré sous forme de chaîne, ou le même message si aucune couleur n'est appliquée.
  */
+fun nouvellePartie(){
+    println("Bienvenue dans Kotlin Monster")
+}
 
 fun changeCouleur(message: String, couleur: String=""): String {
     val reset = "\u001B[0m"

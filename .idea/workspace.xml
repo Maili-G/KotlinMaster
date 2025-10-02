@@ -7,7 +7,6 @@
     <list default="true" id="c591f4b3-7d28-46e3-90a3-5908bb63f8e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/jeu/Partie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/jeu/Partie.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +160,7 @@
       <workItem from="1759214565179" duration="1100000" />
       <workItem from="1759215680619" duration="2891000" />
       <workItem from="1759218590235" duration="4127000" />
-      <workItem from="1759387173440" duration="10367000" />
+      <workItem from="1759387173440" duration="11416000" />
     </task>
     <servers />
   </component>
