@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/jeu/Partie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/jeu/Partie.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/monde/Zone.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/monde/Zone.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/monstre/EspeceMonstre.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/monstre/EspeceMonstre.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/monstre/IndividuMonstre.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/monstre/IndividuMonstre.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +161,7 @@
       <workItem from="1759214565179" duration="1100000" />
       <workItem from="1759215680619" duration="2891000" />
       <workItem from="1759218590235" duration="4127000" />
-      <workItem from="1759387173440" duration="7581000" />
+      <workItem from="1759387173440" duration="10367000" />
     </task>
     <servers />
   </component>
