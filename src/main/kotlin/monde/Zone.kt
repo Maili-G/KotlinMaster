@@ -7,10 +7,10 @@ import org.example.monstre.IndividuMonstre
 import kotlin.random.Random
 
 /**
- * Un objet de la Zone peut représenter une route, une caverne, une mer …
+ * Un objet de la Zone peut représenter une route, une caverne, une mer…
  *
- * Une zone est un endroit où on peut chercher un monstre sauvage et ou
- * on peut se déplacer à la zone suivante ou la zone précédente si il y en a une.
+ * Une zone est un endroit où on peut chercher un monstre sauvage et où
+ * on peut se déplacer à la zone suivante ou la zone précédente s'il y en a une.
  *
  * @property id
  * @property nom
@@ -32,6 +32,7 @@ class Zone (
 ){
     fun genereMonstre(): IndividuMonstre {
         require(especesMonstres.isNotEmpty()) { "Aucune espèce disponible dans cette zone." }
+        println(especesMonstres)
         // Choisir une espèce au hasard
         val especeAleatoire : EspeceMonstre = especesMonstres.random()
 

@@ -20,11 +20,11 @@ import java.io.File
 * @property modDefense Le modificateur de croissance de défense de l'espèce, appliqué lors des montées de niveau.
 * @property modVitesse Le modificateur de croissance de vitesse de l'espèce, appliqué lors des montées de niveau.
 * @property modAttaqueSpe Le modificateur de croissance de l'attaque Spéciale de l'espèce, appliqué lors des montées de niveau.
-* @property modDefenseSpe Le modificateur de croissance de la défense Spécile de l'espèce, appliqué lors des montées de niveau.
+* @property modDefenseSpe Le modificateur de croissance de la défense Spéciale de l'espèce, appliqué lors des montées de niveau.
 * @property modPv Le modificateur de croissance de points de vie de l'espèce, appliqué lors des montées de niveau.
 * @property description La description de l'espèce.
 * @property particularites Les particularités de l'espèce.
-* @property caractères Les caracères de l'espèce.
+* @property caractères Les caractères de l'espèce.
 *
 */
 class EspeceMonstre(
